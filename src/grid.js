@@ -129,7 +129,7 @@ console.log('data sphere: '+elementsSetBaseSphere[2])
                 <planeGeometry args={[2, 2, 2]} />
                 <meshBasicMaterial attach="material" color={'black'} />
             </mesh>
-            <Html key={"b" + i} position={[0, 0.05, 0.09]} transform occlude  >
+            <Html key={"b" + i} position={[0, 0.05, 0.09]} transform occlude onOcclude={(visible) => null}  >
                 <button onClick={() => {
 
                     setCount(count + 1);

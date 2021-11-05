@@ -164,10 +164,10 @@ console.log('data sphere: '+elementsSetBaseSphere[2])
 
     (<group key={i} ref={group} position={[element[0], element[1], element[2]]} rotation={[element[3], element[4],element[5]]} >
         <mesh key={"a" + i} ref={refPlane} >
-            <boxGeometry args={[2, 2.6, 0.1]} />
+            <planeGeometry args={[2, 2.6, 0.1]} />
             <meshPhongMaterial attach="material" color={'rgba(0,127,100,  0.40534638195481165)'} opacity={0.2}  transparent={true}/>
         </mesh>
-         <Html key={"b" + i} position={[0, 0.05, 0.09]} transform occlude  >
+         <Html key={"b" + i} position={[0, 0.05, 0.09]} transform occlude onOcclude={(visible) => null}  >
             <button onClick={() => {
                 setCount(count + 1);
                 setVisible(true);

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
   
 }
 
@@ -16,14 +17,16 @@ code {
 canvas{
   width: 100%;
   height: 100%;
-  background: #000;;
+  background: #000;
+  
 }
 
 /*#canvas-container{
-  width: 1200px;
-  height: 700px;
+  
   background: color #000;;
 }*/
+
+
 
 .testhtml{
   width: 120px;
@@ -77,8 +80,8 @@ button {
 
 .display {
   position: absolute;
-  top: -200px;
-  left: -80px;
+  top: -310px;
+  left: -600px;
   right: 0px;
   padding-top: 30px;
   font-size: 30px;
@@ -181,6 +184,35 @@ button {
   text-align: center;
   line-height: 1.9;
 
+}
+
+.Button_inner{
+ 
+  color: rgba(127,255,255,0.75);
+  background: transparent;
+  outline: 1px solid rgba(127,255,255,0.75);
+  border: 0px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Button_inner:hover{
+  background-color: rgba(0,255,255,0.5);
+}
+
+.Button_inner:active{
+  color: #000000;
+  background-color: rgba(0,255,255,0.75);
+}
+
+#menu{
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  right: 35%;
+  margin-bottom: 3px;
 }
 
 @keyframes example{
