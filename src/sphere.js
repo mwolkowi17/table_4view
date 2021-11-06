@@ -51,9 +51,9 @@ export function Sphere(props) {
 
     object.lookAt(vector);
 
-    elementsSetBaseSphere.push([object.position.x/60,object.position.y/60,object.position.z/60,object.rotation.x,object.rotation.y,object.rotation.z,])
+    elementsSetBaseSphere.push([object.position.x/55,object.position.y/55+1.5,object.position.z/55,object.rotation.x,object.rotation.y,object.rotation.z,])
     
-    
+
   }
   
  const dataToSphere=[];
